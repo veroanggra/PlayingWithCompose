@@ -2,4 +2,11 @@
     <string name="app_name">MigratingSample</string>
     <string name="hello_again">Hello Again !</string>
     <string name="subtitle">Welcome back you\'ve \nbeen missed!</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="password">Password</string>
+    <string name="recovery_password">Recovery Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or_continue_with">Or Continue with</string>
+    <string name="register_now">Register now</string>
+    <string name="not_a_member">Not a member ?</string>
 </resources>

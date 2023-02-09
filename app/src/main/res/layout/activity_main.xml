@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <TextView
@@ -29,16 +30,203 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
         android:text="@string/subtitle"
         android:textSize="24sp"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/tv_title"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/el_username"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/backgroundColor"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:hint="@string/enter_username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/el_password"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/backgroundColor"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/el_username"
+        app:layout_constraintStart_toStartOf="@+id/el_username"
+        app:layout_constraintTop_toBottomOf="@+id/el_username"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/backgroundColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_recovery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:text="@string/recovery_password"
+        app:layout_constraintEnd_toEndOf="@+id/el_password"
+        app:layout_constraintStart_toStartOf="@+id/el_password"
+        app:layout_constraintTop_toBottomOf="@+id/el_password" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:shadowColor="@color/buttonColor"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/el_password"
+        app:layout_constraintStart_toStartOf="@+id/el_password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recovery" />
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/or_continue_with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/lightGray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_continue"
+        app:layout_constraintEnd_toStartOf="@+id/tv_continue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_signin"
+        app:layout_constraintTop_toTopOf="@+id/tv_continue"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/lightGray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_continue"
+        app:layout_constraintEnd_toEndOf="@+id/btn_signin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_continue"
+        app:layout_constraintTop_toTopOf="@+id/tv_continue"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <TextView
+        android:id="@+id/tv_notmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/not_a_member"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/register_now"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_notmember"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/tv_notmember"
+        app:layout_constraintTop_toTopOf="@+id/tv_notmember"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/fl_google"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintStart_toStartOf="@+id/btn_signin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:src="@drawable/google" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_facebook"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintEnd_toEndOf="@+id/btn_signin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fb" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_apple"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintEnd_toStartOf="@+id/fl_facebook"
+        app:layout_constraintStart_toEndOf="@+id/fl_google"
+        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/apple" />
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
