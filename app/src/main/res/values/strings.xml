@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">MigratingSample</string>
-    <string name="sign_up">Sign Up</string>
+    <string name="hello_again">Hello Again !</string>
 </resources>
