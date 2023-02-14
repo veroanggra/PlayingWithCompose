@@ -1,5 +1,6 @@
 package com.veroanggra.migratingsample.widget
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -15,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.*
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.veroanggra.migratingsample.widget.theme.White
+import com.veroanggra.migratingsample.theme.White
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -67,10 +68,19 @@ fun InputTextField(
 @Preview
 @Composable
 fun PreviewWidget() {
-    InputTextField(
-        modifier = Modifier,
-        hint = "Enter Username",
-        type = KeyboardType.Text,
-        capitalization = KeyboardCapitalization.None, color = White
-    )
+    Column() {
+        InputTextField(
+            modifier = Modifier,
+            hint = "Enter Username",
+            type = KeyboardType.Text,
+            capitalization = KeyboardCapitalization.None, color = White
+        )
+        InputTextField(
+            modifier = Modifier,
+            hint = "Password",
+            type = KeyboardType.Password,
+            capitalization = KeyboardCapitalization.None, color = White
+        )
+    }
 }
+
