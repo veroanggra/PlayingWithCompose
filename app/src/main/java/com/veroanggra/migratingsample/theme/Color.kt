@@ -1,4 +1,4 @@
-package com.veroanggra.migratingsample.widget.theme
+package com.veroanggra.migratingsample.theme
 
 import androidx.compose.ui.graphics.Color
 
