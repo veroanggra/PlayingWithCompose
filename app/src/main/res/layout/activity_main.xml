@@ -40,73 +40,22 @@
     <androidx.compose.ui.platform.ComposeView
         android:id="@+id/input_text"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+        app:layout_constraintBottom_toTopOf="@id/tv_recovery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-    <!--        android:id="@+id/el_username"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="60dp"-->
-    <!--        android:layout_marginStart="30dp"-->
-    <!--        android:layout_marginTop="30dp"-->
-    <!--        android:layout_marginEnd="30dp"-->
-    <!--        android:background="@color/backgroundColor"-->
-    <!--        app:boxCornerRadiusBottomEnd="15dp"-->
-    <!--        app:boxCornerRadiusBottomStart="15dp"-->
-    <!--        app:boxCornerRadiusTopEnd="15dp"-->
-    <!--        app:boxCornerRadiusTopStart="15dp"-->
-    <!--        app:boxStrokeWidth="0dp"-->
-    <!--        app:boxStrokeWidthFocused="0dp"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">-->
-
-    <!--        <com.google.android.material.textfield.TextInputEditText-->
-    <!--            android:id="@+id/et_username"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/white"-->
-    <!--            android:hint="@string/enter_username" />-->
-    <!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-    <!--        android:id="@+id/el_password"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="60dp"-->
-    <!--        android:layout_marginTop="15dp"-->
-    <!--        android:background="@color/backgroundColor"-->
-    <!--        app:boxCornerRadiusBottomEnd="15dp"-->
-    <!--        app:boxCornerRadiusBottomStart="15dp"-->
-    <!--        app:boxCornerRadiusTopEnd="15dp"-->
-    <!--        app:boxCornerRadiusTopStart="15dp"-->
-    <!--        app:boxStrokeWidth="0dp"-->
-    <!--        app:boxStrokeWidthFocused="0dp"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/el_username"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/el_username"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/el_username"-->
-    <!--        app:passwordToggleEnabled="true"-->
-    <!--        app:passwordToggleTint="@color/backgroundColor">-->
-
-    <!--        <com.google.android.material.textfield.TextInputEditText-->
-    <!--            android:id="@+id/et_password"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/white"-->
-    <!--            android:hint="@string/password"-->
-    <!--            android:inputType="textPassword" />-->
-
-    <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
     <TextView
         android:id="@+id/tv_recovery"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:gravity="end"
         android:text="@string/recovery_password"
         app:layout_constraintEnd_toEndOf="@+id/input_text"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input_text"
         app:layout_constraintTop_toBottomOf="@+id/input_text" />
 
@@ -240,9 +189,8 @@
 
     <androidx.compose.ui.platform.ComposeView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
