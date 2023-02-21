@@ -11,7 +11,6 @@ So that it is expected to be able to help readers understand the development pro
 
 ## Chapter
 ### Migrating Existing View
-Detail
 ```
 One of the great things about Compose is Interoperability with XML, 
 so it's possible to have a compose component inside a ViewGroup. 
@@ -21,7 +20,7 @@ how to build UI with compose. There are 4 part : Compose Introduction,
 Setup Existing Project to Compose Migrate, Build Custom Widget, and Implementing ComposeView. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" />
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="50" height="70"/>
 </pre>
 
 Branch Detail
@@ -34,13 +33,9 @@ Tutorial
 * [Part3](https://veroanggra.medium.com/part-3-jetpack-compose-migration-of-component-view-input-text-on-existing-layout-110731d584cb) - Jetpack Compose(Migration of Component View (Input Text) on Existing Layout)
 * [Part4](https://veroanggra.medium.com/part-4-jetpack-compose-implementing-a-compose-view-in-a-viewgroup-d6b9873a4c94) - Jetpack Compose(Implementing a Compose View in a ViewGroup)
 
-
-
-
 ## Author
 
 * **Veronica Putri Anggraini**
-* 
 Feel free to follow me, fork and give me a ⭐
 
 
