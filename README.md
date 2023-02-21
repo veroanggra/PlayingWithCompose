@@ -10,7 +10,7 @@ So that it is expected to be able to help readers understand the development pro
 ```
 
 ## Chapter
-### Migrating Existing View
+### [Chapter 1] Migrating Existing View
 ```
 One of the great things about Compose is Interoperability with XML, 
 so it's possible to have a compose component inside a ViewGroup. 
@@ -20,7 +20,7 @@ how to build UI with compose. There are 4 part : Compose Introduction,
 Setup Existing Project to Compose Migrate, Build Custom Widget, and Implementing ComposeView. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="400" height="550"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="350" height="550"/>
 </pre>
 
 Branch Detail
