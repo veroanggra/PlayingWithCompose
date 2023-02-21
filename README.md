@@ -20,7 +20,7 @@ how to build UI with compose. There are 4 part : Compose Introduction,
 Setup Existing Project to Compose Migrate, Build Custom Widget, and Implementing ComposeView. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="500" height="700"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="400" height="550"/>
 </pre>
 
 Branch Detail
