@@ -2,12 +2,15 @@ package com.veroanggra.migratingsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import com.veroanggra.migratingsample.databinding.ActivityMainBinding
 import com.veroanggra.migratingsample.theme.White
+import com.veroanggra.migratingsample.widget.ImageSignIn
 import com.veroanggra.migratingsample.widget.InputTextField
 
 class MainActivity : AppCompatActivity() {
@@ -32,9 +35,14 @@ class MainActivity : AppCompatActivity() {
                     capitalization = KeyboardCapitalization.None,
                     color = White
                 )
-
             }
-
+        }
+        mainBinding.buttonImage.setContent {
+            Row(horizontalArrangement = Arrangement.SpaceEvenly) {
+                ImageSignIn(modifier = Modifier, image = R.drawable.google)
+                ImageSignIn(modifier = Modifier, image = R.drawable.apple)
+                ImageSignIn(modifier = Modifier, image = R.drawable.fb)
+            }
         }
     }
 }

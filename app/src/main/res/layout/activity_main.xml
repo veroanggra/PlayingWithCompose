@@ -41,10 +41,12 @@
         android:id="@+id/input_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toTopOf="@id/tv_recovery"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
 
 
     <TextView
@@ -133,64 +135,14 @@
         app:layout_constraintStart_toEndOf="@+id/tv_notmember"
         app:layout_constraintTop_toTopOf="@+id/tv_notmember"
         app:layout_constraintVertical_bias="0.0" />
-
-    <FrameLayout
-        android:id="@+id/fl_google"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/image_background"
-        app:layout_constraintStart_toStartOf="@+id/btn_signin"
-        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:src="@drawable/google" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/fl_facebook"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/image_background"
-        app:layout_constraintEnd_toEndOf="@+id/btn_signin"
-        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fb" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/fl_apple"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/image_background"
-        app:layout_constraintEnd_toStartOf="@+id/fl_facebook"
-        app:layout_constraintStart_toEndOf="@+id/fl_google"
-        app:layout_constraintTop_toBottomOf="@+id/tv_continue">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/apple" />
-    </FrameLayout>
-
+    
     <androidx.compose.ui.platform.ComposeView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
+        android:id="@+id/button_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_signin"
+        app:layout_constraintStart_toStartOf="@id/btn_signin"
+        app:layout_constraintTop_toBottomOf="@id/tv_continue" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
