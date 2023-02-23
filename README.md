@@ -45,6 +45,12 @@ I write this article that specifically discuss about 3 basic components to Build
 <img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="350" height="550"/>
 </pre>
 
+Branch Detail
+1. Branch ***arrange-column*** for Column Sample
+2. Branch ***row-arrange*** as Row Sample
+3. Branch ***box-arrange*** as Box Sample
+4. Branch ***wallpaper-app*** as Wallpaper UI (Column, Row, Box)
+
 Tutorial
 * [Part1](https://medium.com/@veroanggra/building-basic-layouts-in-jetpack-compose-column-row-and-box-d3cff763d4db) - Building Basic Layouts (Column, Row, and Box)
 
