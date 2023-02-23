@@ -33,6 +33,22 @@ Tutorial
 * [Part3](https://veroanggra.medium.com/part-3-jetpack-compose-migration-of-component-view-input-text-on-existing-layout-110731d584cb) - Jetpack Compose(Migration of Component View (Input Text) on Existing Layout)
 * [Part4](https://veroanggra.medium.com/part-4-jetpack-compose-implementing-a-compose-view-in-a-viewgroup-d6b9873a4c94) - Jetpack Compose(Implementing a Compose View in a ViewGroup)
 
+### [Chapter 2] Basic Layout
+```
+Build UI with modern framework like Compose based on declarative paradigm
+makes the UI building process easier and faster, because it is enough to describe
+the desired appearance in a Composable Function which is written like a function 
+and Compose will handle it behind the scenes. To make it easier to understand this concept, 
+I write this article that specifically discuss about 3 basic components to Build Layout in Compose. 
+```
+<pre>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="350" height="550"/>
+</pre>
+
+Tutorial
+* [Part1](https://medium.com/@veroanggra/building-basic-layouts-in-jetpack-compose-column-row-and-box-d3cff763d4db) - Building Basic Layouts (Column, Row, and Box)
+
+
 ## Author
 
 * **Veronica Putri Anggraini**
