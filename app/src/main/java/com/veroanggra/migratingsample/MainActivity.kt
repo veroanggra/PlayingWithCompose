@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.Surface
+import androidx.compose.runtime.Composable
 import com.veroanggra.composesubmission.ui.theme.PlayingWithComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,4 +18,9 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+@Composable
+fun ConstraintScreen() {
+    
 }
