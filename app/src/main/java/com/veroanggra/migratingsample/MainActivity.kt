@@ -40,7 +40,7 @@ fun ConstraintScreen() {
         val fourthRect = createRefFor("fourthRect")
         val fifthRect = createRefFor("fifthRect")
         val sixRect = createRefFor("sixRect")
-        val sevenRect = createRefFor("sixRect")
+        val sevenRect = createRefFor("sevenRect")
         val guideline = createGuidelineFromBottom(0.1f)
 
 
@@ -58,13 +58,6 @@ fun ConstraintScreen() {
             width = Dimension.fillToConstraints
             height = Dimension.value(100.dp)
         }
-        constrain(secondRect) {
-            top.linkTo(firstRect.bottom)
-            start.linkTo(parent.start)
-            end.linkTo(parent.end)
-            width = Dimension.percent(1f)
-            height = Dimension.value(100.dp)
-        }
         constrain(thirdRect) {
             top.linkTo(firstRect.bottom)
             start.linkTo(secondRect.end)
@@ -72,22 +65,37 @@ fun ConstraintScreen() {
             width = Dimension.percent(1f)
             height = Dimension.value(100.dp)
         }
-        constrain(fourthRect) {
-            top.linkTo(secondRect.bottom)
-            start.linkTo(parent.start)
-            width = Dimension.value(100.dp)
-            height = Dimension.value(100.dp)
-        }
-        constrain(fifthRect) {
-            top.linkTo(secondRect.bottom)
-            start.linkTo(fourthRect.end)
-            end.linkTo(parent.end)
-            width = Dimension.value(100.dp)
-            height = Dimension.value(100.dp)
-        }
+//        constrain(fourthRect) {
+//            top.linkTo(secondRect.bottom)
+//            start.linkTo(parent.start)
+//            width = Dimension.value(100.dp)
+//            height = Dimension.value(100.dp)
+//        }
+//        constrain(fifthRect) {
+//            top.linkTo(secondRect.bottom)
+//            start.linkTo(fourthRect.end)
+//            end.linkTo(parent.end)
+//            width = Dimension.value(100.dp)
+//            height = Dimension.value(100.dp)
+//        }
+//        constrain(sixRect) {
+//            bottom.linkTo(guideline)
+//            start.linkTo(parent.start)
+//            width = Dimension.value(100.dp)
+//            height = Dimension.value(100.dp)
+//        }
+//        constrain(sevenRect) {
+//            bottom.linkTo(guideline)
+//            start.linkTo(sixRect.end)
+//            end.linkTo(parent.end)
+//            width = Dimension.value(100.dp)
+//            height = Dimension.value(100.dp)
+//        }
 //        createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.Spread)
 //        createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.SpreadInside)
         createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.Packed)
+        createHorizontalChain(sixRect, sevenRect, chainStyle = ChainStyle.Spread)
+
     }
     ConstraintLayout(constraintSet = constraint, modifier = Modifier.fillMaxSize()) {
         Box(
@@ -114,6 +122,16 @@ fun ConstraintScreen() {
             modifier = Modifier
                 .layoutId("fifthRect")
                 .background(Purple40)
+        )
+        Box(
+            modifier = Modifier
+                .layoutId("sixRect")
+                .background(Pink40)
+        )
+        Box(
+            modifier = Modifier
+                .layoutId("sevenRect")
+                .background(NeonGreen)
         )
     }
 }
