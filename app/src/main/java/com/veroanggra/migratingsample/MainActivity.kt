@@ -65,19 +65,19 @@ fun ConstraintScreen() {
             width = Dimension.percent(1f)
             height = Dimension.value(100.dp)
         }
-//        constrain(fourthRect) {
-//            top.linkTo(secondRect.bottom)
-//            start.linkTo(parent.start)
-//            width = Dimension.value(100.dp)
-//            height = Dimension.value(100.dp)
-//        }
-//        constrain(fifthRect) {
-//            top.linkTo(secondRect.bottom)
-//            start.linkTo(fourthRect.end)
-//            end.linkTo(parent.end)
-//            width = Dimension.value(100.dp)
-//            height = Dimension.value(100.dp)
-//        }
+        constrain(fourthRect) {
+            top.linkTo(secondRect.bottom)
+            start.linkTo(parent.start)
+            width = Dimension.value(100.dp)
+            height = Dimension.value(100.dp)
+        }
+        constrain(fifthRect) {
+            top.linkTo(secondRect.bottom)
+            start.linkTo(fourthRect.end)
+            end.linkTo(parent.end)
+            width = Dimension.value(100.dp)
+            height = Dimension.value(100.dp)
+        }
 //        constrain(sixRect) {
 //            bottom.linkTo(guideline)
 //            start.linkTo(parent.start)
