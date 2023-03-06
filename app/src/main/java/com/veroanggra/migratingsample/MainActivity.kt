@@ -78,19 +78,19 @@ fun ConstraintScreen() {
             width = Dimension.value(100.dp)
             height = Dimension.value(100.dp)
         }
-//        constrain(sixRect) {
-//            bottom.linkTo(guideline)
-//            start.linkTo(parent.start)
-//            width = Dimension.value(100.dp)
-//            height = Dimension.value(100.dp)
-//        }
-//        constrain(sevenRect) {
-//            bottom.linkTo(guideline)
-//            start.linkTo(sixRect.end)
-//            end.linkTo(parent.end)
-//            width = Dimension.value(100.dp)
-//            height = Dimension.value(100.dp)
-//        }
+        constrain(sixRect) {
+            bottom.linkTo(guideline)
+            start.linkTo(parent.start)
+            width = Dimension.value(100.dp)
+            height = Dimension.value(100.dp)
+        }
+        constrain(sevenRect) {
+            bottom.linkTo(guideline)
+            start.linkTo(sixRect.end)
+            end.linkTo(parent.end)
+            width = Dimension.value(100.dp)
+            height = Dimension.value(100.dp)
+        }
 //        createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.Spread)
 //        createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.SpreadInside)
         createHorizontalChain(fourthRect, fifthRect, chainStyle = ChainStyle.Packed)
@@ -135,7 +135,6 @@ fun ConstraintScreen() {
         )
     }
 }
-
 @Preview
 @Composable
 fun PreviewConstraintScreen() {
