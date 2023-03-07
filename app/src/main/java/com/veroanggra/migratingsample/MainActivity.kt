@@ -263,7 +263,7 @@ fun HomeScreen(modifier: Modifier) {
                 .constrainAs(firstAuthorImage) {
                     start.linkTo(authorTitle.start)
                     top.linkTo(authorTitle.bottom)
-                }, image = R.drawable.pict1
+                }, image = R.drawable.person1
         )
         Text(
             text = "Jane Rose", fontSize = 12.sp,
@@ -280,7 +280,7 @@ fun HomeScreen(modifier: Modifier) {
                 .constrainAs(secondAuthorImage) {
                     top.linkTo(firstAuthorImage.top)
                     bottom.linkTo(firstAuthorImage.bottom)
-                }, image = R.drawable.pict1
+                }, image = R.drawable.person2
         )
         Text(
             text = "Robert Dun", fontSize = 12.sp,
@@ -298,7 +298,7 @@ fun HomeScreen(modifier: Modifier) {
                     top.linkTo(secondAuthorImage.top)
                     bottom.linkTo(secondAuthorImage.bottom)
                     end.linkTo(authorTitle.end)
-                }, image = R.drawable.pict1
+                }, image = R.drawable.person3
         )
         Text(
             text = "Anastacia", fontSize = 12.sp,
