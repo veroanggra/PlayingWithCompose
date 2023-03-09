@@ -20,7 +20,7 @@ how to build UI with compose. There are 4 part : Compose Introduction,
 Setup Existing Project to Compose Migrate, Build Custom Widget, and Implementing ComposeView. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="300" height="550"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="200" height="450"/>
 </pre>
 
 Branch Detail
@@ -42,7 +42,7 @@ and Compose will handle it behind the scenes. To make it easier to understand th
 I write this article that specifically discuss about 3 basic components to Build Layout in Compose. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="300" height="550"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="200" height="450"/>
 </pre>
 
 Branch Detail
@@ -62,8 +62,8 @@ to create layouts using a similar approach.
 ```
 
 <pre>
-<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict3.png" alt="pict2" width="300" height="550"/>
-<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict4.png" alt="pict2" width="300" height="550"/>
+<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict3.png" alt="pict2" width="200" height="450"/>
+<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict4.png" alt="pict2" width="200" height="450"/>
 </pre>
 
 Branch Detail
