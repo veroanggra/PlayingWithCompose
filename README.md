@@ -62,8 +62,7 @@ to create layouts using a similar approach.
 ```
 
 <pre>
-<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict3.png" alt="pict2" width="200" height="450"/>
-<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict4.png" alt="pict2" width="200" height="450"/>
+<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict3.png" alt="pict2" width="200" height="450"/> <img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict4.png" alt="pict2" width="200" height="450"/>
 </pre>
 
 Branch Detail
