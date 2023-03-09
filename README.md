@@ -20,7 +20,7 @@ how to build UI with compose. There are 4 part : Compose Introduction,
 Setup Existing Project to Compose Migrate, Build Custom Widget, and Implementing ComposeView. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="350" height="550"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict1.png" alt="pict1" width="300" height="550"/>
 </pre>
 
 Branch Detail
@@ -42,7 +42,7 @@ and Compose will handle it behind the scenes. To make it easier to understand th
 I write this article that specifically discuss about 3 basic components to Build Layout in Compose. 
 ```
 <pre>
-<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="350" height="550"/>
+<img src="https://github.com/veroanggra/MigratingToComposeSample/blob/master/screenshoot/pict2.png" alt="pict2" width="300" height="550"/>
 </pre>
 
 Branch Detail
@@ -53,6 +53,26 @@ Branch Detail
 
 Tutorial
 * [Part1](https://medium.com/@veroanggra/building-basic-layouts-in-jetpack-compose-column-row-and-box-d3cff763d4db) - Building Basic Layouts (Column, Row, and Box)
+
+### [Chapter 3] Constraint Layout
+```
+ConstraintLayout is a layout manager that allows you to create complex layouts 
+by defining constraints between views. In Compose, you can use ConstraintLayout 
+to create layouts using a similar approach. 
+```
+
+<pre>
+<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict3.png" alt="pict2" width="300" height="550"/>
+<img src="https://github.com/veroanggra/PlayingWithCompose/blob/master/screenshoot/pict4.png" alt="pict2" width="300" height="550"/>
+</pre>
+
+Branch Detail
+1. Branch ***basic-constraint*** for Basic Constraint Layout
+2. Branch ***handpicked-app*** for Complex Contraint Page Sample
+
+Tutorial
+* [Part1](https://veroanggra.medium.com/explore-constraint-layout-on-jetpack-compose-bb45e489b07) - Explore Constraint Layout on Jetpack Compose
+
 
 
 ## Author
