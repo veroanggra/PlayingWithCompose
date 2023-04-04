@@ -39,14 +39,43 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun FavoriteButton(modifier: Modifier = Modifier) {
-        var favorite by remember { mutableStateOf(false) }
-        var color by remember { mutableStateOf(Color.Gray) }
+        /* Mutable Delegate */
+//        var favorite by remember { mutableStateOf(false) }
+//        var color by remember { mutableStateOf(Color.Gray) }
 
-        color = if (favorite) {
-            Color.Red
-        } else {
-            Color.Gray
+//        color = if (favorite) {
+//            Color.Red
+//        } else {
+//            Color.Gray
+//        }
+//        Image(Icons.Default.Favorite,
+//            contentDescription = null,
+//            colorFilter = ColorFilter.tint(color),
+//            modifier = modifier
+//                .size(200.dp)
+//                .clickable {
+//                    favorite = true
+//                    if (color == Color.Red) {
+//                        favorite = false
+//                    }
+//                }
+//        )
+
+        // Destructuring
+        val (favorite, setFavorite) = remember {
+            mutableStateOf(false)
         }
+        val (color, setColor) = remember {
+            mutableStateOf(Color.Gray)
+        }
+
+        setColor(
+            if (favorite) {
+                Color.Red
+            } else {
+                Color.Gray
+            }
+        )
 
         Image(Icons.Default.Favorite,
             contentDescription = null,
@@ -54,9 +83,9 @@ class MainActivity : ComponentActivity() {
             modifier = modifier
                 .size(200.dp)
                 .clickable {
-                    favorite = true
+                    setFavorite(!favorite)
                     if (color == Color.Red) {
-                        favorite = false
+                        setFavorite(!favorite)
                     }
                 }
         )
