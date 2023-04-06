@@ -55,7 +55,7 @@ fun PlayingWithComposeTheme(
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
-            (view.context as Activity).window.statusBarColor = DarkCream.toArgb()
+            (view.context as Activity).window.statusBarColor = blueA9CADA.toArgb()
             ViewCompat.getWindowInsetsController(view)?.isAppearanceLightStatusBars = darkTheme
         }
     }
