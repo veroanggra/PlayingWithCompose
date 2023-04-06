@@ -32,20 +32,19 @@ class MainActivity : ComponentActivity() {
         setContent {
             PlayingWithComposeTheme {
                 Surface {
-                    GaleryApp()
+                    EmoticonApp()
                 }
             }
         }
     }
 
     @Composable
-    fun GaleryApp(modifier: Modifier = Modifier) {
+    fun EmoticonApp(modifier: Modifier = Modifier) {
         var feelCode by remember {
             mutableStateOf(0)
         }
         var isExpanded by remember { mutableStateOf(true) }
-        // declare
-        val animateList by animateDpAsState(
+        val animateEmoticon by animateDpAsState(
             targetValue = if (isExpanded) 300.dp else 250.dp, animationSpec = spring(
                 Spring.DampingRatioHighBouncy, stiffness = Spring.StiffnessLow
             )
@@ -73,7 +72,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.sad,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -91,7 +90,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.bored,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -109,7 +108,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.pressure,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -127,7 +126,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.happy,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -145,7 +144,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.laughing,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -163,7 +162,7 @@ class MainActivity : ComponentActivity() {
                     ImageTop(
                         image = R.drawable.love,
                         modifier = modifier
-                            .size(animateList)
+                            .size(animateEmoticon)
                             .constrainAs(emoticonImage) {
                                 start.linkTo(parent.start)
                                 top.linkTo(parent.top)
@@ -180,7 +179,7 @@ class MainActivity : ComponentActivity() {
                 else -> ImageTop(
                     image = R.drawable.surprised,
                     modifier = modifier
-                        .size(animateList)
+                        .size(animateEmoticon)
                         .constrainAs(emoticonImage) {
                             start.linkTo(parent.start)
                             top.linkTo(parent.top)
