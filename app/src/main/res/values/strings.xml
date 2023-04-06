@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MigratingSample</string>
+    <string name="sad_quotes">It is amazing how someone can break your heart and you can still love them with all the little pieces.</string>
+    <string name="pressure_quotes">Pressure is the single mom who is trying to scuffle and pay her rent. We get paid a lot of money to play a game. Don\'t get me wrong: there are challenges. But to call it pressure is almost an insult to regular people.</string>
+    <string name="bored_quotes">I\'m bored is a useless thing to say. I mean, you live in a great, big, vast world that you’ve seen none percent of. Even the inside of your own mind is endless; it goes on forever, inwardly, do you understand? The fact that you’re alive is amazing, so you don\'t get to say: I\'m bored.</string>
+    <string name="happy_quotes">Happy people is a great hope to all the unhappy people because a path of success can always be used by the people who couldn\'t find such a path yet!</string>
+    <string name="laughing_quotes">I love people who make me laugh. I honestly think it\'s the thing I like most, to laugh. It cures a multitude of ills. It\'s probably the most important thing in a person.</string>
+    <string name="love_quotes">It\'s so easy to love someone at their best; to be happy when everything is going right. The true test is loving them and understanding them at their worst; because that\'s when they need you most. If they can\'t love you through the bad times, they don\'t deserve you through the good ones.</string>
 </resources>
