@@ -7,7 +7,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.Surface
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.*
@@ -23,41 +22,51 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PlayingWithComposeTheme {
-                ConstraintLayout(Modifier.fillMaxSize()) {
-                    val (imageFavorite) = createRefs()
-                    FavoriteButton(modifier = Modifier.constrainAs(imageFavorite) {
-                        start.linkTo(parent.start)
-                        top.linkTo(parent.top)
-                        end.linkTo(parent.end)
-                        bottom.linkTo(parent.bottom)
-                    })
-
-                }
+                FavoriteApp()
             }
         }
     }
 
     @Composable
-    fun FavoriteButton(modifier: Modifier = Modifier) {
+    fun FavoriteApp() {
         var favorite by remember { mutableStateOf(false) }
         var color by remember { mutableStateOf(Color.Gray) }
 
-        color = if (favorite) {
-            Color.Red
-        } else {
-            Color.Gray
+        ConstraintLayout(Modifier.fillMaxSize()) {
+            color = if (favorite) {
+                Color.Red
+            } else {
+                Color.Gray
+            }
+            val (imageFavorite) = createRefs()
+            FavoriteButton(modifier = Modifier.constrainAs(imageFavorite) {
+                start.linkTo(parent.start)
+                top.linkTo(parent.top)
+                end.linkTo(parent.end)
+                bottom.linkTo(parent.bottom)
+            }, color = color, onFavoriteValueChanged = {
+                favorite = true
+                if (color == Color.Red) {
+                    favorite = false
+                }
+            }, favorite = favorite)
+
         }
+    }
+
+    @Composable
+    fun FavoriteButton(
+        modifier: Modifier = Modifier,
+        favorite: Boolean,
+        onFavoriteValueChanged: (Boolean) -> Unit,
+        color: Color
+    ) {
         Image(Icons.Default.Favorite,
             contentDescription = null,
             colorFilter = ColorFilter.tint(color),
             modifier = modifier
                 .size(200.dp)
-                .clickable {
-                    favorite = true
-                    if (color == Color.Red) {
-                        favorite = false
-                    }
-                }
+                .clickable { onFavoriteValueChanged(favorite) }
         )
     }
 
