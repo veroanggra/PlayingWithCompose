@@ -22,13 +22,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PlayingWithComposeTheme {
-                FavoriteApp()
+                FavoriteAppScreen()
             }
         }
     }
 
     @Composable
-    fun FavoriteApp() {
+    fun FavoriteAppScreen() {
         var favorite by remember { mutableStateOf(false) }
         var color by remember { mutableStateOf(Color.Gray) }
 
@@ -50,7 +50,6 @@ class MainActivity : ComponentActivity() {
                     favorite = false
                 }
             }, favorite = favorite)
-
         }
     }
 
