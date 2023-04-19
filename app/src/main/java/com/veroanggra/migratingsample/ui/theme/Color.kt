@@ -17,3 +17,7 @@ val DarkGreen = Color(0xFF5B8078)
 val NeonGreen = Color(0xFFBBE2DD)
 val GreenPickerColor = Color(0xFF3B7672)
 val YellowPickerColor = Color(0xFFEAC776)
+
+val YellowECE9E1 = Color(0XFFECE9E1)
+val YellowD8AC4E = Color(0XFFD8AC4E)
+val YellowEFE5C9 = Color(0XFFEFE5C9)
